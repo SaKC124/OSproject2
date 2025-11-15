@@ -14,4 +14,5 @@
 ## Log 5: Nov 14 4:11pm
 ### Finishing up the teller method and customer method. The teller method will run in a while loop as customers are coming to the bank and ends when there are no customers. It will use if else statements to take actions based off of the type of transaction it needs to do. The customer method randomlt will generate for each customer what kind of transavtion its doing and enters door to talk to teller when available. It waits till transaction is done and then leaves the bank. There arent any loops needed for that
 
-## Log 6: Nov 14   
+## Log 6: Nov 14 10:23pm
+### So much is going on and I've written so much that I have to make sure I am not missing anything at all. I'm tracing and checking my program making sure everything looks like it will be called before I run the program, making sure the program is calling the semaphores and the locks and conditions are in and being called. I'm going to do some final touches and start running the program 
