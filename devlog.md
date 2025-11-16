@@ -19,3 +19,8 @@
 
 ## Log 7: Nov 14 10:51pm
 ### Program seems to be running and its displaying on the console, but it is not ending for some reason amd continues to run. I feel like the problem might be near the teller method but I'm also going to check customer and main again to make sure everything looks lined up. Other than that format looks good and eveything is printing, just need to verify after I fix the issue if its printing in proper order. I'v had some syntax issues here and there but this is the big one after fixing those.
+
+## Log 8: Nov 16 12:24pm
+### Took a break and hoping to wrap this up quickly. I started to figure out the reason was with my customer queuing. I had some queue management code in the main method to make it more centralized between teller and customer threads to assign them together, but I think I was making it a lot complicated. It seems like the issue was the tellers didn't know whether they were done with the customers because the queue kept running, as a result the tellers wouldn't leave and the bank wouldn't close. To overide this I could easily do a timeout with the join calls to overide it as a easy fix. But another issue now that I see is that the problem is also a lot earlier, where for some time the tellers seem like they are helping the customers, but after that there are a lot more customers wanting to do transactions and are in line and it doesn't show that the teller is assigned and helping anyone even though their previous customer left. It is like the queue all of a sudden decided not to work. Some thing is definitely wrong with the queue as its not doing its job throughout the execution of the program.
+
+##
